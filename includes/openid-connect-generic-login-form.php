@@ -138,7 +138,7 @@ class OpenID_Connect_Generic_Login_Form {
 		ob_start();
 		?>
 		<div class="openid-connect-login-button" style="margin: 1em 0; text-align: center;">
-			<a class="button button-large" style="background: #57DDB9; color: black; border-color: #57DDB9;" href="<?php print esc_url( $href ); ?>"><?php print $text; ?></a>
+			<a class="button button-large" style="background: #29cba0; color: black; border-color: #29cba0;" href="<?php print esc_url( $href ); ?>"><?php print $text; ?></a>
 		</div>
 		<?php
 		return ob_get_clean();
