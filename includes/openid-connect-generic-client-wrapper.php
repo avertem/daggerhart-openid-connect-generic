@@ -737,7 +737,7 @@ class OpenID_Connect_Generic_Client_Wrapper {
 
 		// make sure we didn't fail in creating the user
 		if ( is_wp_error( $uid ) ) {
-			return new WP_Error( 'failed-user-creation', __( 'Failed user creation.' ), $uid );
+			return new WP_Error( 'failed-user-creation', __( 'Failed user creation ['.$username.']['.$email.']'), $uid );
 		}
 
 		// retrieve our new user
